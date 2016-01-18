@@ -8,15 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: KNBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var bar = KNNavigationBar()
-        bar.frame = CGRectMake(0, 0, 320, 60);
-        self.view.addSubview(bar)
-        bar.titleLabel?.text = "bbb"
+        let button = UIButton()
+        button.backgroundColor = UIColor.redColor()
+        self.view.addSubview(button)
+        button.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(self.view)
+        }
+        button.setTitle("TapMe", forState: .Normal)
+        button.addTarget(self, action: "push:", forControlEvents: .TouchUpInside)
+        self.kn_navigationbar?.titleLabel?.text = "Hello world"
+//        let rightItem = KNNavigationItem(itemSize: CGSizeMake(44, 30), itemTitle: "right") { (sender:UIButton) -> Void in
+//            print("sender is \(sender)")
+//        })
+        let rightItem = KNNavigationItem(itemSize: CGSizeMake(44, 30), itemTitle: "right", handle:{ (sender) -> Void in
+            print("sender is \(sender)")
+        })
+        self.kn_navigationbar?.rightItem = rightItem
+    }
+    
+    func push(sender:UIButton) {
+        let vc2 = KNBViewController()
+        self.navigationController?.pushViewController(vc2, animated: true)
+    }
+    
+    override func needBackItem() -> Bool {
+        return false
     }
     
     override func didReceiveMemoryWarning() {

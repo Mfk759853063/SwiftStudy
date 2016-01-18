@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01CEEDA91C4781520059689C /* KNNavigationDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEEDA81C4781520059689C /* KNNavigationDefine.swift */; };
+		01CEEDB91C4785730059689C /* KNNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEEDB81C4785730059689C /* KNNavigationItem.swift */; };
+		01E5C5251C48E72100774A27 /* UIViewControllerKNNavExtensitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5C5241C48E72100774A27 /* UIViewControllerKNNavExtensitions.swift */; };
+		01E5C5371C48EF7300774A27 /* UIViewExtensitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5C5361C48EF7300774A27 /* UIViewExtensitions.swift */; };
+		01E5C53A1C48F85600774A27 /* KNBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5C5391C48F85600774A27 /* KNBaseViewController.swift */; };
+		01E5C53C1C48F96500774A27 /* KNBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5C53B1C48F96500774A27 /* KNBViewController.swift */; };
 		3F0BAFBA20F844058A5855CE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3C63F117C9F7DD1C71976C /* Pods.framework */; };
 		AF71DA721C4772A400D42E3A /* KNBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71DA711C4772A400D42E3A /* KNBaseNavigationController.swift */; };
 		AF71DA741C4772EB00D42E3A /* KNNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71DA731C4772EB00D42E3A /* KNNavigationBar.swift */; };
@@ -135,6 +141,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01CEEDA81C4781520059689C /* KNNavigationDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNNavigationDefine.swift; sourceTree = "<group>"; };
+		01CEEDB81C4785730059689C /* KNNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNNavigationItem.swift; sourceTree = "<group>"; };
+		01E5C5241C48E72100774A27 /* UIViewControllerKNNavExtensitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerKNNavExtensitions.swift; sourceTree = "<group>"; };
+		01E5C5361C48EF7300774A27 /* UIViewExtensitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensitions.swift; sourceTree = "<group>"; };
+		01E5C5391C48F85600774A27 /* KNBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNBaseViewController.swift; sourceTree = "<group>"; };
+		01E5C53B1C48F96500774A27 /* KNBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNBViewController.swift; sourceTree = "<group>"; };
 		4CDC6F036696FC4BC5873B25 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF71D9D91C4755BC00D42E3A /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = ReactiveCocoa/Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
 		AF71DA711C4772A400D42E3A /* KNBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNBaseNavigationController.swift; sourceTree = "<group>"; };
@@ -183,6 +195,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E5C5341C48EF4000774A27 /* Extensitions */ = {
+			isa = PBXGroup;
+			children = (
+				01E5C5351C48EF5C00774A27 /* Frame */,
+			);
+			name = Extensitions;
+			path = RACStudyProject/Extensitions;
+			sourceTree = "<group>";
+		};
+		01E5C5351C48EF5C00774A27 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				01E5C5361C48EF7300774A27 /* UIViewExtensitions.swift */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		01E5C5381C48F84000774A27 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				01E5C5391C48F85600774A27 /* KNBaseViewController.swift */,
+			);
+			name = Base;
+			path = RACStudyProject/Base;
+			sourceTree = "<group>";
+		};
 		7FC0A05C97DDA4FBF9DFF35D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +233,8 @@
 		AF71DA051C47571300D42E3A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				01E5C5381C48F84000774A27 /* Base */,
+				01E5C5341C48EF4000774A27 /* Extensitions */,
 				AF71DA701C47728300D42E3A /* KNBaseNavigationController */,
 				AF71DA511C47723F00D42E3A /* Submodles */,
 			);
@@ -244,6 +284,9 @@
 			children = (
 				AF71DA711C4772A400D42E3A /* KNBaseNavigationController.swift */,
 				AF71DA731C4772EB00D42E3A /* KNNavigationBar.swift */,
+				01CEEDB81C4785730059689C /* KNNavigationItem.swift */,
+				01CEEDA81C4781520059689C /* KNNavigationDefine.swift */,
+				01E5C5241C48E72100774A27 /* UIViewControllerKNNavExtensitions.swift */,
 			);
 			name = KNBaseNavigationController;
 			path = RACStudyProject/KNBaseNavigationController;
@@ -277,6 +320,7 @@
 				AF71DA051C47571300D42E3A /* Common */,
 				AFB567B01C4647B800E8C767 /* AppDelegate.swift */,
 				AFB567B21C4647B800E8C767 /* ViewController.swift */,
+				01E5C53B1C48F96500774A27 /* KNBViewController.swift */,
 				AFB567B41C4647B800E8C767 /* Main.storyboard */,
 				AFB567B71C4647B800E8C767 /* Assets.xcassets */,
 				AFB567B91C4647B800E8C767 /* LaunchScreen.storyboard */,
@@ -604,9 +648,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E5C5251C48E72100774A27 /* UIViewControllerKNNavExtensitions.swift in Sources */,
 				AFB567B31C4647B800E8C767 /* ViewController.swift in Sources */,
+				01E5C53A1C48F85600774A27 /* KNBaseViewController.swift in Sources */,
+				01E5C5371C48EF7300774A27 /* UIViewExtensitions.swift in Sources */,
+				01CEEDB91C4785730059689C /* KNNavigationItem.swift in Sources */,
 				AFB567B11C4647B800E8C767 /* AppDelegate.swift in Sources */,
+				01CEEDA91C4781520059689C /* KNNavigationDefine.swift in Sources */,
 				AF71DA741C4772EB00D42E3A /* KNNavigationBar.swift in Sources */,
+				01E5C53C1C48F96500774A27 /* KNBViewController.swift in Sources */,
 				AF71DA721C4772A400D42E3A /* KNBaseNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
